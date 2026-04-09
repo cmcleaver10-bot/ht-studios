@@ -45,6 +45,7 @@ const Footer = () => {
               <a href="#programs" onClick={(e) => handleNavClick(e, 'programs')}>Rising Stars (6–9)</a>
               <a href="#programs" onClick={(e) => handleNavClick(e, 'programs')}>Studio Company (10–14)</a>
               <a href="#programs" onClick={(e) => handleNavClick(e, 'programs')}>Elite Ensemble (15–18)</a>
+              <a href="#programs" onClick={(e) => handleNavClick(e, 'programs')}>Competition Teams</a>
             </div>
           </div>
 
