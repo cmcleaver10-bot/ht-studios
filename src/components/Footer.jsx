@@ -31,6 +31,7 @@ const Footer = () => {
             <div className="footer-links">
               <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About Us</a>
               <a href="#programs" onClick={(e) => handleNavClick(e, 'programs')}>Programs</a>
+              <a href="#competitions" onClick={(e) => handleNavClick(e, 'competitions')}>Competitions</a>
               <a href="#instructors" onClick={(e) => handleNavClick(e, 'instructors')}>Instructors</a>
               <a href="#testimonials" onClick={(e) => handleNavClick(e, 'testimonials')}>Testimonials</a>
               <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>

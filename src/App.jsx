@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Programs from './components/Programs';
+import Competitions from './components/Competitions';
 import Instructors from './components/Instructors';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -35,6 +36,7 @@ function App() {
         <Hero />
         <About />
         <Programs />
+        <Competitions />
         <Instructors />
         <Testimonials />
         <Contact />

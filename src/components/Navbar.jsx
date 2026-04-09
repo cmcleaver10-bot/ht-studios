@@ -25,6 +25,7 @@ const Navbar = () => {
   const links = [
     { label: 'About', id: 'about' },
     { label: 'Programs', id: 'programs' },
+    { label: 'Competitions', id: 'competitions' },
     { label: 'Instructors', id: 'instructors' },
     { label: 'Testimonials', id: 'testimonials' },
     { label: 'Contact', id: 'contact' },

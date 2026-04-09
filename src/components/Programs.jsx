@@ -63,6 +63,47 @@ const Programs = () => {
             </div>
           ))}
         </div>
+
+        <div className="programs-teams-header fade-up">
+          <h2 className="section-title">Competition Teams</h2>
+          <p className="section-subtitle">
+            For dancers looking for more intensive training and performance opportunities.
+            Audition based teams for serious young artists.
+          </p>
+        </div>
+
+        <div className="programs-grid">
+          <div className="program-card fade-up" style={{ transitionDelay: '0.1s' }}>
+            <div className="program-icon">🎗️</div>
+            <span className="program-age">Novice Level</span>
+            <h3 className="program-name">Prep Team</h3>
+            <p className="program-description">A bridge between recreational classes and the competitive world. Focus on foundation and performance basics.</p>
+            <div className="program-styles">
+              <span className="program-style-tag">Technical Drill</span>
+              <span className="program-style-tag">Intro to Comp</span>
+            </div>
+          </div>
+          <div className="program-card fade-up" style={{ transitionDelay: '0.2s' }}>
+            <div className="program-icon">💎</div>
+            <span className="program-age">Intermediate Level</span>
+            <h3 className="program-name">Select Team</h3>
+            <p className="program-description">Dancers committed to multiple regional competitions. Rigorous training in various disciplines with team-building emphasis.</p>
+            <div className="program-styles">
+              <span className="program-style-tag">Multiple Styles</span>
+              <span className="program-style-tag">Regional Circuit</span>
+            </div>
+          </div>
+          <div className="program-card fade-up" style={{ transitionDelay: '0.3s' }}>
+            <div className="program-icon">🎭</div>
+            <span className="program-age">Advanced Level</span>
+            <h3 className="program-name">Elite Team</h3>
+            <p className="program-description">Our highest level of commitment. National-level training for pre-professional dancers focused on mastery and artistry.</p>
+            <div className="program-styles">
+              <span className="program-style-tag">Pre-Professional</span>
+              <span className="program-style-tag">National Circuit</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

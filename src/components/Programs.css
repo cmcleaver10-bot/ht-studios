@@ -3,12 +3,16 @@
   background: var(--white);
 }
 
-.programs-header {
+.programs-header, .programs-teams-header {
   text-align: center;
   margin-bottom: var(--space-3xl);
 }
 
-.programs-header .section-subtitle {
+.programs-teams-header {
+  margin-top: var(--space-5xl);
+}
+
+.programs-header .section-subtitle, .programs-teams-header .section-subtitle {
   margin: 0 auto;
 }
 
