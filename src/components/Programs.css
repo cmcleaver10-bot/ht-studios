@@ -1,0 +1,149 @@
+.programs {
+  position: relative;
+  background: var(--white);
+}
+
+.programs-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.programs-header .section-subtitle {
+  margin: 0 auto;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.program-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.program-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  transition: height var(--transition-base);
+}
+
+.program-card:nth-child(1)::before {
+  background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+}
+
+.program-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #87CEEB, #4169E1);
+}
+
+.program-card:nth-child(3)::before {
+  background: linear-gradient(135deg, #FFD700, #FF8C00);
+}
+
+.program-card:nth-child(4)::before {
+  background: linear-gradient(135deg, #9B59B6, #8E44AD);
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: transparent;
+}
+
+.program-card:hover::before {
+  height: 6px;
+}
+
+.program-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.program-card:nth-child(1) .program-icon {
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+.program-card:nth-child(2) .program-icon {
+  background: linear-gradient(135deg, rgba(135, 206, 235, 0.2), rgba(65, 105, 225, 0.2));
+}
+
+.program-card:nth-child(3) .program-icon {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 140, 0, 0.2));
+}
+
+.program-card:nth-child(4) .program-icon {
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.2), rgba(142, 68, 173, 0.2));
+}
+
+.program-age {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: var(--gray-100);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+.program-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.program-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.program-styles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.program-style-tag {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: var(--cream);
+  color: var(--gray-600);
+}
+
+@media (max-width: 1024px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+}
